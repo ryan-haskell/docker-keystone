@@ -1,0 +1,19 @@
+{
+  "name": "lawyer-and-sons-keystone",
+  "version": "1.0.0",
+  "description": "Exposes an API to data populated from the KeystoneJS interface.",
+  "main": "keystone.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "keystone",
+    "api",
+    "backend"
+  ],
+  "author": "Ryan Haskell-Glatz",
+  "license": "ISC",
+  "dependencies": {
+    "keystone": "^0.3.22"
+  }
+}

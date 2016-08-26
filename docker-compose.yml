@@ -4,3 +4,16 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+  keystone:
+    image: las-keystone-node
+    links: 
+      - mongo
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo/lawyer-and-sons
+    volumes:
+      - ./keystone.js:/usr/src/app/keystone.js
+      - ./models:/usr/src/app/models
+      - ./routes:/usr/src/app/routes
+      - ./updates:/usr/src/app/updates

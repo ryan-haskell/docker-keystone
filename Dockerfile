@@ -6,11 +6,14 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package.json /usr/src/app/
+COPY nodemon.json /usr/src/app/
 RUN npm install
+RUN npm install -g nodemon
 
 # Bundle app source
 # COPY . /usr/src/app
 
 EXPOSE 3000
-CMD [ "node", "keystone" ]
+
+CMD [ "nodemon", "keystone.js" ]
 

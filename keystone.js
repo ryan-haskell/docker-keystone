@@ -7,7 +7,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	
 	'auto update': true,
-	'mongo': process.env.MONGO_URI || 'mongodb://localhost/lawyer-and-sons',
+	'mongo': process.env.MONGO_URI || 'mongodb://mongo/lawyer-and-sons',
 	
 	'session': true,
 	'auth': true,

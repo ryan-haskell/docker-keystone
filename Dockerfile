@@ -7,12 +7,9 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN npm install --quiet
-RUN npm install -g forever --quiet
-
-# Bundle app source
-# COPY . /usr/src/app
+RUN npm install -g nodemon
 
 EXPOSE 3000
 
-CMD [ "forever", "-w", "keystone.js" ]
+CMD [ "nodemon" ]
 

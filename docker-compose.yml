@@ -5,6 +5,7 @@ services:
     ports:
       - "27017:27017"
   keystone:
+    build: .
     image: las-keystone-node
     links: 
       - mongo

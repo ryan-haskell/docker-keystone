@@ -1,7 +1,5 @@
 var keystone = require('keystone');
 
-console.log(process.env);
-
 keystone.init({
 	
 	'name': 'Lawyer & Sons',

@@ -10,6 +10,7 @@
 2. Run __`docker-compose up`__ to spin up your _MongoDB_ and _NodeJS_ containers.
 
 > Windows: Go to __[http://192.168.99.100:3000/keystone](http://192.168.99.100:3000/keystone)__ to get started.
+
 > Linux/Mac: Go to __[http://localhost:3000/keystone](http://localhost:3000/keystone)__ to get started.
 
 

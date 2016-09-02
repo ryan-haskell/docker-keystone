@@ -1,9 +1,14 @@
 version: '2'
 services:
   mongo:
-    image: mongo
+    image: las-mongo
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
   keystone:
-    build: .
+    build: 
+      context: .
+      dockerfile: node.Dockerfile
     image: las-keystone-node
     links: 
       - mongo

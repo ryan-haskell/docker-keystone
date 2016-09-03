@@ -1,4 +1,4 @@
-# Lawyer and Sons | KeystoneJS
+# Docker | KeystoneJS
 > An isolated KeystoneJS service that exposes a simple API to any future frontend developers.
 
 > The default user is __`admin@keystonejs.com`__ with password __`admin`__

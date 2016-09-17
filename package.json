@@ -14,7 +14,7 @@
   "author": "Ryan Haskell-Glatz",
   "license": "ISC",
   "dependencies": {
-    "keystone": "^0.3.22"
+    "keystone": "^4.0.0-beta.1"
   },
   "devDependencies": {}
 }

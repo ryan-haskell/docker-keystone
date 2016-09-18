@@ -2,7 +2,7 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': process.env.SITE_NAME || 'KeystoneJS CMS',
+	'name': process.env.SITE_NAME || 'Docker | Keystone',
 
 	'auto update': true,
 	'mongo': process.env.MONGO_URI || 'mongodb://mongo/keystone',

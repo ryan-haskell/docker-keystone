@@ -1,2 +1,6 @@
 .env
 node_modules
+
+# Git Submodules
+models
+routes

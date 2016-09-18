@@ -2,10 +2,10 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': 'Lawyer & Sons',
-		
+	'name': process.env.SITE_NAME || 'KeystoneJS CMS',
+
 	'auto update': true,
-	'mongo': process.env.MONGO_URI || 'mongodb://mongo/lawyer-and-sons',
+	'mongo': process.env.MONGO_URI || 'mongodb://mongo/keystone',
 
 	'session': true,
 	'auth': true,
@@ -17,5 +17,10 @@ keystone.init({
 require('./models');
 
 keystone.set('routes', require('./routes'));
+
+keystone.set('nav', {
+	'menu': ['Food', 'FoodCategory', 'FoodIngredient'],
+	'user': 'User'
+});
 
 keystone.start();

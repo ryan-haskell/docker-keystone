@@ -25,5 +25,6 @@ var routes = {
 exports = module.exports = function(app) {
     
     app.get('/', routes.api.index);
+    app.get('/api/home-page', routes.api['home-page']);
     
 };

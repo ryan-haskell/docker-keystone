@@ -18,9 +18,6 @@ require('./models');
 
 keystone.set('routes', require('./routes'));
 
-keystone.set('nav', {
-	'menu': ['Food', 'FoodCategory', 'FoodIngredient'],
-	'user': 'User'
-});
+keystone.set('nav', require('./routes/nav'));
 
 keystone.start();
